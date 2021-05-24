@@ -29,8 +29,16 @@ button[type="button"] > div {
   align-items: center;
 }
 
-.svg-inline--fa,
 .checkTrue {
-  font-size: 0.75rem;
-  color: white;
+  .svg-inline--fa {
+    font-size: 0.75rem;
+    color: white;
+    transform: scale(0);
+  }
+}
+
+.checkTrue:focus {
+  .svg-inline--fa {
+    transform: scale(1.2);
+  }
 }
